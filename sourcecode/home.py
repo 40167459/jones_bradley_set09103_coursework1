@@ -21,5 +21,13 @@ def hostage():
 def bomb():
   return render_template('bomb.html')
 
+@app.route('home/elimination')
+def elimination():
+  return render_template('elimination.html')
+
+@app.route('home/death')
+def deathmatch():
+  return render_template('death.html')
+
 if __name__ == "__main__":
   app.run(host='0.0.0.0', debug=True)
