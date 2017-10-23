@@ -21,17 +21,13 @@ def hostage():
 def bomb():
   return render_template('bomb.html')
 
-@app.route.errorhandler(404)
+@app.errorhandler(404)
 def page_not_found(error):
   return "Couldn't find the page you request.", 404
 
-@app.route('home/elimination')
-def elimination():
-  return render_template('elimination.html')
-
-@app.route('home/death')
+@app.route('/home/deathmatch')
 def deathmatch():
-  return render_template('death.html')
+  return render_template('deathmatch.html')
 
 if __name__ == "__main__":
   app.run(host='0.0.0.0', debug=True)
