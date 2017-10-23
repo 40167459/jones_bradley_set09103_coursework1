@@ -21,6 +21,10 @@ def hostage():
 def bomb():
   return render_template('bomb.html')
 
+@app.route.errorhandler(404)
+def page_not_found(error):
+  return "Couldn't find the page you request.", 404
+
 @app.route('home/elimination')
 def elimination():
   return render_template('elimination.html')
