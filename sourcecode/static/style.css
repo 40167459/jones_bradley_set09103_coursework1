@@ -1,20 +1,26 @@
+/* the chosen background colour for the pages is light blue */
 body{
   background-color: lightblue;
 }
+/*Font choice for h1 */
 h1{
   font-family: Arial, Helvetica, sans-serif;
 }
+/*Font choice for h2 */
 h2{
   font-family: Arial, Helvetica, sans-serif;
   font-width: 50%;
 }
+/*Font choice for h3 */ 
 h3{
   font-family: Arial, Helvetica, sans-serif;
 }
+/*Font choice for h4 */
 h4{
   font-family: Arial, Helvetica, sans-serif;
   font-width: 50%;
 }
+/*Font choice for p*/
 p{
   font-family: Arial, Helvetica, sans-serif;
 }
